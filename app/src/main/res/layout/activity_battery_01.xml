@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,18 +7,28 @@
     tools:context=".Battery_01">
 
     <TextView
+        android:id="@+id/mTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="197dp"
         android:text="如何取得電池計量"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/myBotton01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="按我取得電池計量"/>
+        android:layout_above="@+id/mTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-197dp"
+        android:layout_marginStart="105dp"
+        android:text="按我取得電池計量" />
 
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
