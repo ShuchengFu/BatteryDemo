@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Battery</string>
+    <string name="title"></string>
+    <string name="body">電池計量</string>
+</resources>
